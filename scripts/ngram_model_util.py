@@ -15,10 +15,10 @@ def generate_ngram_model(listoffilenames, N):
 
 # trigram model
 ngram_model = generate_ngram_model(["../domains/alexa_doNotUseForFeatureCalculation.txt"],N=3)
-filename = "../models/trigram.model"
+filename = "../models/ngram/trigram.model"
 pickle.dump(ngram_model,open(filename,"wb"))
 
 # quadgram model
 ngram_model = generate_ngram_model(["../domains/alexa_doNotUseForFeatureCalculation.txt"],N=4)
-filename = "../models/quadgram.model"
+filename = "../models/ngram/quadgram.model"
 pickle.dump(ngram_model,open(filename,"wb"))
